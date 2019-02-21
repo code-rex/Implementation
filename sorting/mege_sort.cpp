@@ -3,19 +3,25 @@
 using namespace std;
 void merge(int a[],int l,int m,int h)
 {
+     //two aux. array a[l..m] and a[m+1..h]
      int p=l,q=m+1;
-     int arr[h-l+1],k=0;
+     int arr[h-l+1],k=0; 
      for(int i=l;i<=h;i++)
      {
+	//first array came to end. fill the second array data. 
      	if(p>m)
             arr[k++]=a[q++];
+	//second array came to end. fill the first array data.
      	else if(q>h)
      		arr[k++]=a[p++];
+	     
+	//compare both array and fill smallest data
      	else if(a[p]<a[q])
      		arr[k++]=a[p++];
      	else
      		arr[k++]=a[q++];
      }
+  //Copying Data 
    for(int z=0;z<k;z++)
    	a[l++]=arr[z];
 }
