@@ -47,7 +47,7 @@ int weighted_scheduling(interval a[],int n)
 	    binary[i]=binary_search(a,i);
 		if(binary[i]!=-1)
 			include+=table[binary[i]];
-	//including or excluding the current job
+	//store maximum of including or excluding the current job
 		table[i]=max(table[i-1],include);
 	}
 	return table[n-1];
