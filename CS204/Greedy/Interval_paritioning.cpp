@@ -3,7 +3,13 @@
 using namespace std;
 class MinIndexedPQ
 {
+	//miniumum finish time along all classroom for given interval
+	//minimum is maintained by finish time
+	//returning the classroom index whose finish time is latest
 	int nmax,n,*keys,*heap,*index;
+	//keys contain finish time
+	//index contains class-room
+	//heap contain lecture
 	void swapd(int i,int j)
 	{
 		swap(heap[i],heap[j]);
@@ -42,8 +48,11 @@ class MinIndexedPQ
 		void insert(int i,int key)
 		{
 			n++;
+			//ith interval in nth class-room(lecture->class)
 			index[i]=n;
+			//ith lecture in nth class(class->lecture)
 			heap[n]=i;
+			//finish time of ith class-room
 			keys[i]=key;
 			bubbleup(n);
 		}
