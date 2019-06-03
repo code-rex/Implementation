@@ -11,11 +11,9 @@ int main()
 		cin>>n;
 		int a[n];
 		int maxsum=-pow(10,7);
-		for(int i=0;i<n;i++){
+		int sum=-pow(10,7);
+		for(int i=0;i<n;i++)
 			cin>>a[i];
-			maxsum=max(maxsum,a[i]);
-		}
-		int sum=0;
 		for(int i=0;i<n;i++)
 		{
 			sum=max(a[i],sum+a[i]);
