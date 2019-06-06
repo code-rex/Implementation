@@ -27,7 +27,7 @@ for(int i=1;i<=n;i++)
  sum+=a[i]*(i-1)-a[i]*(n-i)
  
  //or by using cumulative sum
- 
+ */
  #include <bits/stdc++.h>
 using namespace std;
  
