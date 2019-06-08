@@ -1,4 +1,6 @@
 //Bucket Sort for floating numbers
+//Bucket sort is mainly useful when input is uniformly distributed over a range
+//Below code is for +ve int/float
 void bucketSort(float arr[], int n) 
 { 
     // 1) Create n empty buckets 
