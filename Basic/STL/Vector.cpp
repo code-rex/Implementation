@@ -38,7 +38,6 @@
 
   vec.erase(remove(vec.begin(),vec.end(),8),vec.end);
 
-4. 
 
 
  
