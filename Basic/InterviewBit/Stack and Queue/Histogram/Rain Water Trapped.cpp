@@ -20,27 +20,27 @@ Logic:If the water is stored at some position i means there are building larger 
 Make two array left and right. left[i] will contain maximum element encounter till i along with i form left(runs from 1-n),
 same for right[i] from right position
 */
-Optimal Solution space O(1) Time O(n)
+//Optimal Solution space O(1) Time O(n)
 
 int Solution::trap(const vector<int> &A) {
     int n=A.size();
     int lo=0,hi=n-1;
     int left_max=0,right_max=0;
     int result=0;
-    while(lo<=hi)
+    while(lo <= hi)
     {
-        if(A[lo]<A[hi])
+        if(A[lo] < A[hi])
         {
-            if(A[lo]>left_max)
-                left_max=A[lo];
+            if(A[lo] > left_max)
+                left_max = A[lo];
             else
                 result+=left_max-A[lo];
             lo++;
         }
         else
         {
-            if(A[hi]>right_max)
-                right_max=A[hi];
+            if(A[hi] > right_max)
+                right_max = A[hi];
             else
                 result+=right_max-A[hi];
             hi--;
