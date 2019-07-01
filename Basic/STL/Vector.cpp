@@ -31,13 +31,25 @@
   
   for removing duplicate with constant space it is preffered to move all duplicate to RHS then resize the vector in O(1) rather than 
   erasing the element.
+  vec.resize(count);
    
   vec.clear() //for full clear
   
 3.Erasing elements by value
 
-  vec.erase(remove(vec.begin(),vec.end(),8),vec.end);
+  vec.erase( remove(vec.begin(),vec.end(),8) ,vec.end);
 
+4. BASIC
+    int max=*max_element(a.begin(),a.end());
+    int min=*min_element(a.begin(),a.end());
+    int sum=accumulate(a.begin(),a.end(),p);
 
+5. BINARY SEARCH
+    binary_search(arr.begin(), arr.end(), 15) //results true of false
+    a) upper bound -  upper_bound(arr1.begin(), arr1.end(), 20) - arr1.begin();
+    b) lower bound - lower_bound(arr1.begin(), arr1.end(), 20)  - arr1.begin();
 
+    1 20 20 20 40 50 
+     lower bound for 20 is index 1(0 indexing )
+      upper bound for 20 is index 4 (40)
  
