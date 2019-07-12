@@ -1,4 +1,4 @@
-Merge k sorted linked lists and return it as one sorted list.
+/*Merge k sorted linked lists and return it as one sorted list.
 
 Example :
 
@@ -8,7 +8,7 @@ Example :
 will result in
 
 1 -> 3 -> 4 -> 8 -> 9 -> 10 -> 11 -> 13 -> 20
-
+*/
 
 /**
  * Definition for singly-linked list.
