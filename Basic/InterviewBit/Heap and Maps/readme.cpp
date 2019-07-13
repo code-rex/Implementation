@@ -1,4 +1,4 @@
-In c++ Priority_queue is max heap(by default).(node is maximum then both of its child node).
+In c++ Priority_queue is max heap(By default).(Node is maximum then both of its child node).
 
 For Max Heap : priority_queue<int>pq;
 For Min heap : priority_queue<int,vector<int>,greater<int>()>pq;
