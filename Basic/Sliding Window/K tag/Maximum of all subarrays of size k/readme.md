@@ -5,3 +5,5 @@
   * Priority queue allows acccess to single element(i.e top) .
   * set will sort all data and allows access to all data by linearly iterating over it.
   * for a single element access Priority queue Perfoms better than set.
+  
+* Queue vs Dequeue
