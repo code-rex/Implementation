@@ -7,3 +7,8 @@
   * for a single element access Priority queue Perfoms better than set.
   
 * Queue vs Dequeue
+
+* For a Particular set of Operation (e.q here we want push,pop,access front element) find a suitable(fast) data structure.
+  * Binary search tree(multiset in this case) take O(nlogn) because each operation takes logn time.
+  * Heap is also same as BST but little faster.
+  * Dequeue for all operation take constant time. hence O(n)
