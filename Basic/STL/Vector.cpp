@@ -40,8 +40,9 @@
   vec.erase( remove(vec.begin(),vec.end(),8) ,vec.end);
 
 4. BASIC
-    int max=*max_element(a.begin(),a.end());
-    int min=*min_element(a.begin(),a.end());
+    int max=*max_element(a.begin(),a.end());  //for values
+    int min=*min_element(a.begin(),a.end());  //for values
+    int pos = max_element(a.begin(), a.end()) - a.begin();  //for position
     int sum=accumulate(a.begin(),a.end(),p);
 
 5. BINARY SEARCH
