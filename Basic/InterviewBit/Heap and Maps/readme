@@ -14,3 +14,12 @@ We can also use any comparator function in place of greater<int>
 with Comparater : priority_queue<int,vector<int>,comp>pq;
   
 Functions: push,pop,top,empty,erase 
+
+----------------SET VS PRIORITY QUEUE-----------------
+A priority queue only gives you access to one element in sorted order -- i.e., you can get the highest priority item, and when you remove that, 
+you can get the next highest priority, and so on. A priority queue also allows duplicate elements, so it's more like a multiset than a set. 
+[Edit: As @Tadeusz Kopec pointed out, building a heap is also linear on the number of items in the heap, where building a set is O(N log N) 
+unless it's being built from a sequence that's already ordered (in which case it is also linear).]
+
+A set allows you full access in sorted order, so you can, for example, find two elements somewhere in the middle of the set, then traverse 
+in order from one to the other.
