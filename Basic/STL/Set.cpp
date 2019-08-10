@@ -20,6 +20,11 @@
 		for(set< int >::const_iterator it = S.begin(); it != S.end(); it++) {
 		r += *it;
 		}
+
+		best way to iterate set,map(array too)
+		for(auto i:s)
+		r+=i;
+
 	5) set< int > s;
 		// ...
 		if(s.find(42) != s.end()) {
