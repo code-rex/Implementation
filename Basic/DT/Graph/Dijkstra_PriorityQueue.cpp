@@ -9,11 +9,16 @@ vector<int> ShortestPath(vector<pair<int,int>>adj[],int v,int src)
 	pq.push({0,src});
 	dist[src]=0;
 
+	//A flag array to store what all vertices have been extracted from priority queue. 
+	//This way we can avoid updating weights of items that have already been extracted
+	vector<bool> f(v, false);
+
 	while(!pq.empty())
 	{
 		//1.The First vertex in pq is minimum distance vertex,extract it from priority queue.(pq sort item by first )
 		//2.Vertex label is stored in second of pair
 		int u=pq.top().second;
+		f[u]=true;
 		pq.pop();
 
 		for(auto x : adj[u])
@@ -21,7 +26,7 @@ vector<int> ShortestPath(vector<pair<int,int>>adj[],int v,int src)
 			int v = x.first;
 			int weight = x.second;
 
-			if(dist[v] > dist[u]+weight)
+			if(f[u]==false && dist[v] > dist[u]+weight)
 			{
 				dist[v] = dist[u]+weight;
 				pq.push({dist[v],v});
