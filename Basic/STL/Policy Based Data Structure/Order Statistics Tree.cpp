@@ -39,7 +39,8 @@ int main()
 /*
 1. If we want to get map but not the set, as the second argument type must be used mapped type.
     Ex: 
-    typedef tree< 
+ */
+typedef tree< 
 double, 
 int, 
 less<double>, 
