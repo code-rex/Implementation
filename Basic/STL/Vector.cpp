@@ -53,4 +53,13 @@
     1 20 20 20 40 50 
      lower bound for 20 is index 1(0 indexing )
       upper bound for 20 is index 4 (40)
+        
+ 6. Fastest Way to reset value in vector
+    fill(v.begin(), v.end(), 0);
+    //references https://stackoverflow.com/questions/8848575/fastest-way-to-reset-every-value-of-stdvectorint-to-0
+    other Options:memset,assign,manual,initiliazation
+    a.assign(n,0);
+    memset(a,0,sizeof(a));
+     
+ 
  
