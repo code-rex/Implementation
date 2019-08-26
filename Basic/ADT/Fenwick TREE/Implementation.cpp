@@ -1,5 +1,6 @@
 // https://www.hackerearth.com/practice/notes/binary-indexed-tree-or-fenwick-tree/
 // https://kartikkukreja.wordpress.com/2013/12/02/range-updates-with-bit-fenwick-tree/
+// https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/
 
 int BIT[1000], a[1000], n;
 void update(int x, int delta)
