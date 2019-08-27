@@ -48,7 +48,7 @@ int Solution::paint(int A, int B, vector<int> &C) {
                     current_load=C[i];
                 }
         }
-        if(required<=A)
+        if(required<=A) //if hi=x-1 then lo<=high in while loop for closed bound check
             hi=x;
         else
             lo=x+1;
