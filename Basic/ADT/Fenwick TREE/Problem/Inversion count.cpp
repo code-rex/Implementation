@@ -48,7 +48,8 @@ int32_t main()
 		/*
 		Approach(j>i && A[i]>A[j]) 
 		1.Iterating from back satisifes 1st condition of j>i
-		2.query(just sum of range) gives you cumulative sum from 1-this index (if some no. whose index(here value of array) is bigger has already processed(means updated its value to 1))
+		2.query(just sum of range) gives you cumulative sum from 1-this index (if some no. whose index(here value of array) 
+		is bigger has already processed(means updated its value to 1))
 		3.in the query that will not add to inv count because index is greater(and we are querying for less than our index).
 		 hence only those indexes(a[i]) will matter which is less than this and already processed.
 		*/
