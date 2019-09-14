@@ -1,4 +1,8 @@
 //0 indexing DFS Coloring Approach 0->white 1->grey 2->black 
+/*
+Consider a directed or undirected graph without loops and multiple edges. We have to check whether it is acyclic, 
+and if it is not, then find any cycle.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 vector<vector<int>>adj;
