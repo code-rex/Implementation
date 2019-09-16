@@ -1,4 +1,6 @@
 /*
+https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/discuss/303750/JavaC%2B%2BPython-Find-the-Subarray-with-Target-Sum
+Tushar Roy 
 Idea : converting 2D grid to 1D then using kadane Algorithm(for maximum sum) or map (for counting ranges)
 1)2 Pointer on column l(0-n),r(l-n) store(make an 1d array of size of size row) the sum from l column to r column for every row(Prefix Sum).
 2) For finding maximum sum: Use kadane algorithm on every 1d array generated above and find max sum.
