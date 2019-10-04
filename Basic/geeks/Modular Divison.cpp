@@ -2,7 +2,10 @@
 Modular Divison: (a - b) mod p = ((a mod p - b mod p) + p) mod p
 
 (a / b) mod p = ((a mod p) * (b^(-1) mod p)) mod p
-Where b^(-1) mod p is the modular inverse of b mod p. For p = prime, b^(-1) mod p = b^(p - 2) mod p.
+	Where b^(-1) mod p is the modular inverse of b mod p. 
+		For p = prime, b^(-1) mod p = b^(p - 2) mod p.
+		
+	(a / b) mod p = ((a mod p) * (b^(p-2) mod p)) mod p
 
 */
 
