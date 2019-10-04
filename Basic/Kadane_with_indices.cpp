@@ -5,11 +5,10 @@
 using namespace std;
 vector<int> maxSubArraySum(int a[], int size) 
 { 
-    int max_so_far = INT_MIN, max_ending_here = 0, 
-       start =0, end = 0, s=0;
+    int max_so_far = INT_MIN, max_ending_here = 0,start =0, end = 0, s=0;
     int max_element = INT_MIN;
     int record; 
-  	for (int i=0; i< size; i++ ) 
+    for (int i=0; i< size; i++ ) 
     { 
     	if(max_element<a[i])
     	{
@@ -17,12 +16,12 @@ vector<int> maxSubArraySum(int a[], int size)
     		record=i;
     	}
         max_ending_here += a[i];
-		if (max_ending_here < 0) 
+	if (max_ending_here < 0) 
         { 
             max_ending_here = 0; 
             s = i + 1; 
         } 
-  		else if (max_so_far < max_ending_here) 
+  	else if (max_so_far < max_ending_here) 
         { 
             max_so_far = max_ending_here; 
             start = s; 
