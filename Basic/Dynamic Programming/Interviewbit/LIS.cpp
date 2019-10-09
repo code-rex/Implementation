@@ -40,3 +40,17 @@ int32_t main()
 		cout<<ans<<endl;
 	}
 }
+
+//Bottom UP
+int Solution::lis(const vector<int> &arr) {
+    int n=arr.size();
+    int lis[n];
+    for(int i=0;i<n;i++)
+    {
+        lis[i] = 1;
+        for(int j=0;j<i;j++)
+            if(arr[i]>arr[j] && lis[i]<lis[j]+1)
+                lis[i]=lis[j]+1;
+    }
+    return *max_element(lis,lis+n);
+}
