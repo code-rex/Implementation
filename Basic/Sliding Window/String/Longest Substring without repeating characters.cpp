@@ -25,9 +25,9 @@ int lengthOfLongestSubstring(string s) {
         vector<int>map(128,0);
         while(end<size)
         {
-            if(map[s[end++]]++ > 0) 
+            if(map[s[end++]]++ > 0)//Expression is equivalent to : if(m[s[end]]>0)  counter++; m[s[end]]++ ; end++; 
                 counter++;
-            if(counter>0)
+            while(counter>0)
             {
                 if(map[s[start++]]-- > 1) counter--;
             }
