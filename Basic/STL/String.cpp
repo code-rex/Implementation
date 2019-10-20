@@ -13,8 +13,8 @@ Beware of (s.length()-1) on empty string because s.length() is unsigned and unsi
  stoi do not accept empty string
  */
   
-2)function: isalpha(),isdigit(),isalnum(),lexicographical_compare(p.begin(),p.end(),s.begin(),s.end());
-
+2)function: isalpha(),isdigit(),isalnum(),isupper(),islower()lexicographical_compare(p.begin(),p.end(),s.begin(),s.end());
+	     toupper(),tolower()	
 3)int i=s.find(' ') //Not " "
   0->48 and 9->57 ascii of numbers
   a-z == 97-122
