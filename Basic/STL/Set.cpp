@@ -59,3 +59,11 @@
 				but practically they perform very well and generally provide constant time lookup operation.)
 				
 3. Multi_set(It allows storage of multiple elements)
+
+4. unordered_map does not preserve the order as they inserted.
+	
+5. lower and upper bound in set
+	The set elements are: 1 2 4 5 6 
+	The lower bound of key 2 is 2
+	The lower bound of key 3 is 4
+	The lower bound of key 8 is 5
