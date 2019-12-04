@@ -63,3 +63,16 @@ Beware of (s.length()-1) on empty string because s.length() is unsigned and unsi
     if (found != string::npos) 
         cout << "Next occurrence is " << found << endl; 
   
+9)Permutation of string
+     void permute(string str) 
+     { 
+    // Sort the string in lexicographically 
+    // ascennding order 
+    sort(str.begin(), str.end()); 
+  
+    // Keep printing next permutation while there 
+    // is next permutation 
+    do { 
+       cout << str << endl; 
+    } while (next_permutation(str.begin(), str.end())); 
+    } 
