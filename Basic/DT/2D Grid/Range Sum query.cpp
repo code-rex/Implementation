@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/range-sum-query-2d-immutable/discuss/75350/Clean-C%2B%2B-Solution-and-Explaination-O(mn)-space-with-O(1)-time
 //queries are 0 indexing
-
+// row1,col1-top left row2,col2 -and bottom right
     int row, col;
     vector<vector<int>> sums;
     public:
