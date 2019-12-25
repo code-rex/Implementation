@@ -51,8 +51,28 @@
     b) lower bound - lower_bound(arr1.begin(), arr1.end(), 20)  - arr1.begin();
 
     1 20 20 20 40 50 
+   -----------------Lower and upper bound--------------------------------
      lower bound for 20 is index 1(0 indexing )
-      upper bound for 20 is index 4 (40)
+     upper bound for 20 is index 4 (40)
+       
+     (i)Lower bound
+        1. Item is present - return the first position of element in 0 indexing.
+        2. Item is not present - return the index of first element which is greater than this value.
+        3. if search value is greater than last index value - it goes out of bound(handle by !=vec.end()) (array size is 7 it return 8)
+          
+     (ii)upper bound
+        1. Item is present - return the first position of just greater than value in 0 indexing.
+        2. Item is not present - return the index of first element which is greater than this value.
+        3. if search value is greater than last index value - it goes out of bound(handle by !=vec.end()) (array size is 7 it return 8)
+          
+       Ex. 1. search -10 lower & upper return 0
+           2. search 60 lower & upper return 6
+           3. search 15 lower & upper return 1
+     (iii) Equal range - just lower and upper bound in one line
+           auto equal=std::equal_range (v.begin(), v.end(), 15); //          ^                   ^
+
+          std::cout << "lower_bound at position " << (equal.first- v.begin()) << '\n';//1
+          std::cout << "upper_bound at position " << (equal.second - v.begin()) << '\n';//1
         
  6. Fastest Way to reset value in vector
     fill(v.begin(), v.end(), 0);
