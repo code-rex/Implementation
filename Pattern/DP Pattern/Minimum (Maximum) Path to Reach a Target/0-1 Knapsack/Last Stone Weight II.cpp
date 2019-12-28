@@ -36,3 +36,18 @@ Take any example : How it is min difference of two bigger stone. a,b,c,d (a,b->b
 dp[x] = 1 means the sum x is possible.
 things reduced to : W = sum(stones) / 2
 */
+
+ int lastStoneWeightII(vector<int>& stones) {
+        int sum = accumulate(stones.begin(),stones.end(),0);
+        int target = sum/2;
+        vector<bool>dp(target,false);
+        dp[0] = true; //0 sum is always possible
+        for(auto stone:stones)
+            for(int i=target;i>=stone;i--)
+                dp[i] = dp[i] || dp[i-stone]; //current sum is possible or not
+        //For equal sum partition return dp[target]
+        for(int i=target;i>=0;i--)
+            if(dp[i])
+                return sum-2*i;
+        return 0;
+    }
