@@ -27,7 +27,7 @@ int numRollsToTarget(int d, int f, int target) {
                 {
                     if(i-face>=0)
                     {
-                        new_ways[i]+=ways[i-face];
+                        new_ways[i]+=ways[i-face]; //ways is previous dice total ways
                         new_ways[i]%=mod;
                     }
                 }
