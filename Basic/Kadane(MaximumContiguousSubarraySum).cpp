@@ -13,7 +13,7 @@ int main()
 		int a[n];
 		for(int i=0;i<n;i++)
 			cin>>a[i];
-		int maxsum=a[0];
+		int maxsum=a[0];	//Do not use maxsum and sum - 0 (will fail)
 		int sum=a[0]; //current sum
 		for(int i=1;i<n;i++)
 		{
