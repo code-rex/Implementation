@@ -76,3 +76,14 @@ Beware of (s.length()-1) on empty string because s.length() is unsigned and unsi
        cout << str << endl; 
     } while (next_permutation(str.begin(), str.end())); 
     } 
+
+10) String and Int
+	(i)string to int 
+		int i = stoi(s);
+	(ii)int to string
+		string s = to_string(i);
+	Remember:
+		a) int p = s[i]-'0'; //Single digit conversion
+		b) comparison -> s[i]=='c' // Not Double quotes
+		c) replacing -> s[i] = 'c'
+		d) use Double quotes for adding/comapring more than one char (String literal) -> s+="1234"; //Not s+='1234'
