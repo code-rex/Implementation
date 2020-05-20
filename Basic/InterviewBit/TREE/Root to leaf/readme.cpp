@@ -4,7 +4,7 @@
    a) Passing reference to recursive function will reflect back changes in original array.
    b) Passing value to recursive function(i.e call by value) will make copies of the array everytime function call itself.
 
-3) In Backtracking, we recur back to the desired location which is not directing to answer.(and then pop back that element in case of
+3) In Backtracking, we recur back to the Potential location which is not directing to answer.(and then pop back that element in case of
     vector, and reference is passed)
  
 */
