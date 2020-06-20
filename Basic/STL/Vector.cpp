@@ -26,10 +26,20 @@
   
 2.Erasing element by index 
 
-  vec.erase(vec.begin() + index); //for n element its O(N) because array will reshift each time
-  vec.erase(vec.begin()+k,vec.end());
+  vec.erase(vec.begin() + index); //for n element its O(N) because array will reshift each time (0-indexing)
+  vec.erase(vec.begin()+k,vec.end()); //deletes from kth index to last index
+  vec.erase(vec.begin()+k,vec.begin()+m); //delete from kth index to mth index
   
-  for removing duplicate with constant space it is preffered to move all duplicate to RHS then resize the vector in O(1) rather than 
+  (i) For removing by index in the vector in O(1) ->Order of element does not mattter
+     -> swap last index element with the to_remove index element
+     -> vector.pop_back()
+    
+ (ii) For removing by index in the vector in O(1) -> order of element matter
+    -> you can use linked list for O(1) but you have to know the previous index before hand otherwise traversal which will cost O(n)
+    -> 
+  
+  Duplicate removal -> 
+  For removing duplicate with constant space it is preffered to move all duplicate to RHS then resize the vector in O(1) rather than 
   erasing the element.
   vec.resize(count);
    
