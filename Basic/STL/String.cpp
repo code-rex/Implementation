@@ -1,5 +1,6 @@
 1)
 String has a substring function without iterators, just indices:
+//s.substr(start,length) or s.substr(start)
 
 string s = "hello";
 string
@@ -13,8 +14,10 @@ Beware of (s.length()-1) on empty string because s.length() is unsigned and unsi
  stoi do not accept empty string
  */
   
-2)function: isalpha(),isdigit(),isalnum(),isupper(),islower()lexicographical_compare(p.begin(),p.end(),s.begin(),s.end());
-	     toupper(),tolower()	
+2)function: 
+        a) Check      - isalpha(), isdigit(), isalnum(), isupper(), islower(), lexicographical_compare(p.begin(), p.end(), s.begin(), s.end());
+	b) Transform  - toupper(), tolower()
+		
 3)int i=s.find(' ') //Not " "
   0->48 and 9->57 ascii of numbers
   a-z == 97-122
@@ -50,7 +53,8 @@ Beware of (s.length()-1) on empty string because s.length() is unsigned and unsi
     return str; 
   } 
 
-8)string str = "geeksforgeeks a computer science"; 
+8) Finding Occurence of a character
+    string str = "geeksforgeeks a computer science"; 
     char c = 'g'; 
   
     // Find first occurrence of 'g' 
@@ -87,3 +91,4 @@ Beware of (s.length()-1) on empty string because s.length() is unsigned and unsi
 		b) comparison -> s[i]=='c' // Not Double quotes
 		c) replacing -> s[i] = 'c'
 		d) use Double quotes for adding/comapring more than one char (String literal) -> s+="1234"; //Not s+='1234'
+		e) stoi do not accept empty string
