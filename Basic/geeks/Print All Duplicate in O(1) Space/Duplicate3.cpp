@@ -7,6 +7,7 @@ Space - O(1)
 TIME - O(N)
 ORDER OF ELEMENT IS MAINTAINED
 Range of Given no. 0 to n-1
+2 1 3 3 4 5 5 5 -> 3 5
 */
 
 void printDuplicates(int arr[], int n) 
