@@ -8,8 +8,10 @@ The array size will not exceed 200.
 
 /*
 Time : Bottom Up - O(target*n) - >100ms
-Time : Top Down - O(2^n) - 8ms
+Time : Top Down - O(2^n) - 8ms (No Sorting) (Follow this Approach)
 The Overall performance of top down is good, But the worst case time complexity is huge.
+Top-Down with Array (with sorting) - 4ms
+Top-Down with Map (with Sorting) - 8ms
 */
 
 class Solution {
