@@ -1,3 +1,10 @@
+/*
+Same as equal subset sum except
+1) Use lock(use bool visited aray) to avoid using same element.
+2) when you found one bucket then find the other buckets reducing buckets by 1 and starting from 0th index
+3) if we find all the buckets i.e k == 0 return true;
+4) the no. of branch we exploring is large(n) as we recurse to every element.
+*/
 class Solution {
 public:
     vector<bool> visited;
